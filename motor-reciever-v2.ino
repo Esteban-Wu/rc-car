@@ -52,7 +52,6 @@ void loop() {
   double angle = 9999; // set to a value that will never occur
   if (radio.available()) { // get angle from remote
     radio.read(&angle, sizeof(angle));
-    Serial.println(angle);
     angle = angle + ((1.00/8.00) * M_PI); // shift to align
   }
   Serial.println(angle);
@@ -70,7 +69,7 @@ void loop() {
    * Left = -1/4 * pi to -1/2 * pi
    * Left forward = -1/2 * pi to -3/4 * pi
    * 
-   * Note that we have to shift the in \put angle, as we want 12 
+   * Note that we have to shift the input angle, as we want 12 
    * o'clock on the joystick to align with the middle of the 
    * forward wedge (-7/8 * pi).
    */
