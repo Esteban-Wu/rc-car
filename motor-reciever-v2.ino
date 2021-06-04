@@ -1,10 +1,13 @@
 /*
  * Esteban Wu, 3/25/21
- * 2-Motor L9110 - v2
+ * 
+ * 2-Motor L9110 car with nRF24 receiver.
  * Note that the motors are meant to be oriented in 
  * opposite directions - i. e., facing away from each
  * other, contacts facing toward or away from each 
- * other. Now supports greater variety of directions
+ * other. 
+ *
+ * Now supports greater variety of directions
  * from the joystick remote controller (8).
  * 
  * Uses the RF24 library for the RF24 class.
